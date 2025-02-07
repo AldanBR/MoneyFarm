@@ -1,0 +1,23 @@
+{
+    "pt": {
+      "pergunta": "Qual é o cúmulo da velocidade?",
+      "resposta": "O pensamento!",
+      "titulo": "Charada Rápida em Português!"
+    },
+    "en": {
+      "pergunta": "What is the ultimate speed?",
+      "resposta": "Thought!",
+      "titulo": "Fast Riddle in English!"
+    },
+    "es": {
+      "pergunta": "¿Cuál es el colmo de la velocidad?",
+      "resposta": "¡El pensamiento!",
+      "titulo": "Adivinanza Rápida en Español!"
+    },
+    "fr": {
+      "pergunta": "Quel est le comble de la vitesse ?",
+      "resposta": "La pensée !",
+      "titulo": "Devinez Rapide en Français!"
+    }
+  }
+  

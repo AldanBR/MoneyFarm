@@ -1,0 +1,19 @@
+{
+    "gerar": ["pt", "en"],  
+    "postar_youtube": [""],  
+    "postar_tiktok": [""],   
+  
+    "youtube": {
+      "pt": "YOUTUBE_API_KEY_PT",
+      "en": "YOUTUBE_API_KEY_EN",
+      "es": "YOUTUBE_API_KEY_ES",
+      "fr": "YOUTUBE_API_KEY_FR"
+    },
+    "tiktok": {
+      "pt": "TIKTOK_ACCESS_TOKEN_PT",
+      "en": "TIKTOK_ACCESS_TOKEN_EN",
+      "es": "TIKTOK_ACCESS_TOKEN_ES",
+      "fr": "TIKTOK_ACCESS_TOKEN_FR"
+    }
+  }
+  

@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    stages {
+        stage('Gerar Vídeos') {
+            steps {
+                script {
+                    sh "docker exec ffmpeg /scripts/gerar_videos.sh"
+                }
+            }
+        }
+        stage('Publicar no YouTube') {
+            steps {
+                script {
+                    sh "python3 /scripts/upload_youtube.py"
+                }
+            }
+        }
+        stage('Publicar no TikTok') {
+            steps {
+                script {
+                    sh "python3 /scripts/upload_tiktok.py"
+                }
+            }
+        }
+    }
+}
