@@ -1,11 +1,11 @@
 pipeline {
     agent any
-    stage('Checkout Código') {
+    stages {
+        stage('Checkout Código') {
             steps {
                 git branch: 'main', url: 'https://github.com/AldanBR/MoneyFarm.git'
             }
         }
-    stages {
         stage('Gerar Vídeo PT-BR') {
             steps {
                 script {
