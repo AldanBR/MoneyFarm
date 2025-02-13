@@ -1,87 +1,92 @@
 pipeline {
     agent any
+    stage('Checkout Código') {
+            steps {
+                git branch: 'main', url: 'https://github.com/AldanBR/MoneyFarm.git'
+            }
+        }
     stages {
         stage('Gerar Vídeo PT-BR') {
             steps {
                 script {
-                    sh "docker exec ffmpeg /scripts/gerar_videos.sh"
+                    echo "teste"
                 }
             }
         }
         stage('Gerar Vídeo EN') {
             steps {
                 script {
-                    sh "docker exec ffmpeg /scripts/gerar_videos.sh"
+                    echo "teste"
                 }
             }
         }
         stage('Gerar Vídeo ES') {
             steps {
                 script {
-                    sh "docker exec ffmpeg /scripts/gerar_videos.sh"
+                    echo "teste"
                 }
             }
         }
         stage('Gerar Vídeo FR') {
             steps {
                 script {
-                    sh "docker exec ffmpeg /scripts/gerar_videos.sh"
+                    echo "teste"
                 }
             }
         }
         stage('Publicar no YouTube BR') {
             steps {
                 script {
-                    sh "python3 /scripts/upload_youtube.py"
+                    echo "teste"
                 }
             }
         }
         stage('Publicar no YouTube EN') {
             steps {
                 script {
-                    sh "python3 /scripts/upload_youtube.py"
+                    echo "teste"
                 }
             }
         }
         stage('Publicar no YouTube ES') {
             steps {
                 script {
-                    sh "python3 /scripts/upload_youtube.py"
+                    echo "teste"
                 }
             }
         }
         stage('Publicar no YouTube FR') {
             steps {
                 script {
-                    sh "python3 /scripts/upload_youtube.py"
+                    echo "teste"
                 }
             }
         }
         stage('Publicar no TikTok PT') {
             steps {
                 script {
-                    sh "python3 /scripts/upload_tiktok.py"
+                    echo "teste"
                 }
             }
         }
         stage('Publicar no TikTok EN') {
             steps {
                 script {
-                    sh "python3 /scripts/upload_tiktok.py"
+                    echo "teste"
                 }
             }
         }
         stage('Publicar no TikTok ES') {
             steps {
                 script {
-                    sh "python3 /scripts/upload_tiktok.py"
+                    echo "teste"
                 }
             }
         }
         stage('Publicar no TikTok FR') {
             steps {
                 script {
-                    sh "python3 /scripts/upload_tiktok.py"
+                    echo "teste"
                 }
             }
         }
